@@ -9,20 +9,22 @@
 	</head>
 	<body>
 		<header class="header">
-			<nav class="header-nav">
-				<div class="navigation-toggle btn" id="toggle-menu">
-					<span class="toggle-bar"></span>
-					<span class="toggle-bar"></span>
-					<span class="toggle-bar"></span>
-					<span class="toggle-bar--close"></span>
-				</div>
-				<ul class="navigation">
-					<a href="#kregle" class="navigation-item"><li>Kręgielnia</li></a>
-					<a href="#menu" class="navigation-item"><li>Menu</li></a>
-					<a href="#bar" class="navigation-item"><li>Bar</li></a>
-					<a href="#kontakt" class="navigation-item"><li>Kontakt</li></a>
-				</ul>
-			</nav>
+			<div class="header-fixed">
+				<nav class="header-nav">
+					<div class="navigation-toggle btn" id="toggle-menu">
+						<span class="toggle-bar"></span>
+						<span class="toggle-bar"></span>
+						<span class="toggle-bar"></span>
+						<span class="toggle-bar--close"></span>
+					</div>
+					<ul class="navigation">
+						<a href="#kregle" class="navigation-item"><li>Kręgielnia</li></a>
+						<a href="#menu" class="navigation-item"><li>Menu</li></a>
+						<a href="#bar" class="navigation-item"><li>Bar</li></a>
+						<a href="#kontakt" class="navigation-item"><li>Kontakt</li></a>
+					</ul>
+				</nav>
+			</div>
 			<h1 class="main-header">Stodoła</h1>
 		</header>
 		<main class="main">
@@ -64,44 +66,326 @@
 				<article class="gallery-item"><img src="./assets/images/gallery_3.jpg" alt="" class="gallery-image" /></article>
 				<article class="gallery-item"><img src="./assets/images/gallery_1.jpg" alt="" class="gallery-image" /></article>
 				<article class="gallery-item"><img src="./assets/images/gallery_2.jpg" alt="" class="gallery-image" /></article>
+			</section>
+			<section class="section section-bowling" id="kregle">
+				<h3 class="section-title">Kręgielnia</h3>
+				<article class="bowling-pricing">
+					<div class="pricing-box">
+						<h4 class="pricing-box--title">Cennik za 1 godzinę gry</h4>
+						<table class="pricing-table">
+							<thead>
+								<th class="pricing-table--header table-header--blank"></th>
+								<th class="pricing-table--header">
+									poniedziałek - czwartek
+								</th>
+								<th class="pricing-table--header">
+									piątek - niedziela i święta
+								</th>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="pricing-table--description ">do godziny 15:00</td>
+									<td class="pricing-table--description pricing-table--price">20,00&nbsp;zł</td>
+									<td class="pricing-table--description pricing-table--price">30,00&nbsp;zł</td>
+								</tr>
+								<tr>
+									<td class="pricing-table--description ">po godzinie 15:00</td>
+									<td class="pricing-table--description pricing-table--price">30,00&nbsp;zł</td>
+									<td class="pricing-table--description pricing-table--price">40,00&nbsp;zł</td>
+								</tr>
+							</tbody>
+						</table>
+						<p class="pricing-box--footer">
+							<span class="pricing-footer--span">Wypożyczenie butów - 1 zł</span>
+							<span class="pricing-footer--span">Skarpety jednorazowe - 1 zł</span>
+						</p>
+					</div>
+				</article>
+			</section>
+			<section class="section section-menu" id="menu">
+				<h3 class="section-title">Nasze Menu</h3>
+				<div class="menu-box">
+					<article class="menu-cart">
+						<h4 class="menu-cart--title">Pizza</h4>
+						<p class="menu-cart--info">Pizzę robimy w godzinach 14-22</p>
+						<table class="table-menu">
+							<thead>
+								<th class="table-menu--header"></th>
+								<th class="table-menu--header">Średnia (30cm)</th>
+								<th class="table-menu--header">Duża (45cm)</th>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="menu-item">
+										<p class="menu-item--name">1. Margarita</p>
+										<p class="menu-item--description">Sos pomidorowy, ser, bazylia</p>
+									</td>
+									<td class="menu-item menu-item--price">13,00 zł</td>
+									<td class="menu-item menu-item--price">20,00 zł</td>
+								</tr>
+								<tr>
+									<td class="menu-item">
+										<p class="menu-item--name">2. Salami</p>
+										<p class="menu-item--description">Sos pomidorowy, ser, salami</p>
+									</td>
+									<td class="menu-item menu-item--price">16,00 zł</td>
+									<td class="menu-item menu-item--price">27,00 zł</td>
+								</tr>
+								<tr>
+									<td class="menu-item">
+										<p class="menu-item--name">3. Roma</p>
+										<p class="menu-item--description">Sos pomidorowy, ser, szynka</p>
+									</td>
+									<td class="menu-item menu-item--price">16,00 zł</td>
+									<td class="menu-item menu-item--price">27,00 zł</td>
+								</tr>
+								<tr>
+									<td class="menu-item">
+										<p class="menu-item--name">4. Wegetariańska</p>
+										<p class="menu-item--description">Sos pomidorowy, ser, pieczarki, papryka, cebula, pomidor, kukurydza, szparagi</p>
+									</td>
+									<td class="menu-item menu-item--price">21,00 zł</td>
+									<td class="menu-item menu-item--price">30,00 zł</td>
+								</tr>
+								<tr>
+									<td class="menu-item">
+										<p class="menu-item--name">5. Tradycyjna</p>
+										<p class="menu-item--description">Sos pomidorowy, ser, pieczarki, papryka, cebula, szynka</p>
+									</td>
+									<td class="menu-item menu-item--price">21,00 zł</td>
+									<td class="menu-item menu-item--price">30,00 zł</td>
+								</tr>
+								<tr>
+									<td class="menu-item">
+										<p class="menu-item--name">6. Brokułowa</p>
+										<p class="menu-item--description">Sos pomidorowy, ser, brokuły, szynka</p>
+									</td>
+									<td class="menu-item menu-item--price">19,00 zł</td>
+									<td class="menu-item menu-item--price">28,00 zł</td>
+								</tr>
+								<tr>
+									<td class="menu-item">
+										<p class="menu-item--name">7. Szpinakowa</p>
+										<p class="menu-item--description">Sos pomidorowy, ser, szpinak, mozzarella</p>
+									</td>
+									<td class="menu-item menu-item--price">19,00 zł</td>
+									<td class="menu-item menu-item--price">28,00 zł</td>
+								</tr>
+								<tr>
+									<td class="menu-item">
+										<p class="menu-item--name">8. Hawajska</p>
+										<p class="menu-item--description">Sos pomidorowy, ser, szynka, ananas</p>
+									</td>
+									<td class="menu-item menu-item--price">19,00 zł</td>
+									<td class="menu-item menu-item--price">28,00 zł</td>
+								</tr>
+								<tr>
+									<td class="menu-item">
+										<p class="menu-item--name">9. Mistrza</p>
+										<p class="menu-item--description">Sos pomidorowy, ser, kurczak, pomidor, papryka, peperoni, brokuły, szynka, kapary</p>
+									</td>
+									<td class="menu-item menu-item--price">28,00 zł</td>
+									<td class="menu-item menu-item--price">36,00 zł</td>
+								</tr>
+								<tr>
+									<td class="menu-item">
+										<p class="menu-item--name">10. Wiejska</p>
+										<p class="menu-item--description">Sos pomidorowy, ser, pieczarki, cebula, groszek, ogórek kiszony, kiełbasa, boczek, papryka</p>
+									</td>
+									<td class="menu-item menu-item--price">28,00 zł</td>
+									<td class="menu-item menu-item--price">36,00 zł</td>
+								</tr>
+								<tr>
+									<td class="menu-item">
+										<p class="menu-item--name small-name">11. Sos czosnkowy</p>
+									</td>
+									<td class="menu-item menu-item--price"></td>
+									<td class="menu-item menu-item--price">2,00 zł</td>
+								</tr>
+								<tr>
+									<td class="menu-item">
+										<p class="menu-item--name small-name">12. Ketchup</p>
+									</td>
+									<td class="menu-item menu-item--price"></td>
+									<td class="menu-item menu-item--price">2,00 zł</td>
+								</tr>
+								<tr>
+									<td class="menu-item">
+										<p class="menu-item--name small-name">13. Dodatki mięsne</p>
+									</td>
+									<td class="menu-item menu-item--price">3,00 zł</td>
+									<td class="menu-item menu-item--price">4,00 zł</td>
+								</tr>
+								<tr>
+									<td class="menu-item">
+										<p class="menu-item--name small-name">14. Dodatki warzywne, ser</p>
+									</td>
+									<td class="menu-item menu-item--price">2,00 zł</td>
+									<td class="menu-item menu-item--price">3,00 zł</td>
+								</tr>
+							</tbody>
+						</table>
+					</article>
+					<article class="menu-cart">
+						<h4 class="menu-cart--title">Polecamy również</h4>
+						<p class="menu-cart--info">&nbsp;</p>
+						<table class="table-menu">
+							<thead>
+								<th class="table-menu--header">&nbsp;</th>
+								<th class="table-menu--header">&nbsp;</th>
+								<th class="table-menu--header">&nbsp;</th>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="menu-item">
+										<p class="menu-item--name">Kurczak z rożna</p>
+									</td>
+									<td class="menu-item menu-item--price">20,00 zł</td>
+								</tr>
+								<tr>
+									<td class="menu-item">
+										<p class="menu-item--name">Golono w/w 100g</p>
+									</td>
+									<td class="menu-item menu-item--price">6,00 zł</td>
+								</tr>
+								<tr>
+									<td class="menu-item">
+										<p class="menu-item--name">Szaszłyk w/w 100g</p>
+									</td>
+									<td class="menu-item menu-item--price">6,00 zł</td>
+								</tr>
+								<tr>
+									<td class="menu-item">
+										<p class="menu-item--name">Pieczywo szt.</p>
+									</td>
+									<td class="menu-item menu-item--price">1,50 zł</td>
+								</tr>
+								<tr>
+									<td class="menu-item">
+										<p class="menu-item--name">Hamburger</p>
+									</td>
+									<td class="menu-item menu-item--price">6,00 zł</td>
+								</tr>
+								<tr>
+									<td class="menu-item">
+										<p class="menu-item--name">Zapiekanka</p>
+									</td>
+									<td class="menu-item menu-item--price">6,00 zł</td>
+								</tr>
+								<tr>
+									<td class="menu-item">
+										<p class="menu-item--name">Flaczki 350g</p>
+									</td>
+									<td class="menu-item menu-item--price">10,00 zł</td>
+								</tr>
+								<tr>
+									<td class="menu-item">
+										<p class="menu-item--name">Fasolka po bretońsku 350g</p>
+									</td>
+									<td class="menu-item menu-item--price">10,00 zł</td>
+								</tr>
+								<tr>
+									<td class="menu-item">
+										<p class="menu-item--name">Frytki</p>
+									</td>
+									<td class="menu-item menu-item--price">4,00 zł</td>
+								</tr>
+								<tr>
+									<td class="menu-item">
+										<p class="menu-item--name">Popcorn duża miska</p>
+									</td>
+									<td class="menu-item menu-item--price">5,00 zł</td>
+								</tr>
+								<tr>
+									<td class="menu-item">
+										<p class="menu-item--name small-name">Kawa po turecku</p>
+									</td>
+									<td class="menu-item menu-item--price">4,00 zł</td>
+								</tr>
+								<tr>
+									<td class="menu-item">
+										<p class="menu-item--name">Cappuccino</p>
+									</td>
+									<td class="menu-item menu-item--price">4,00 zł</td>
+								</tr>
+								<tr>
+									<td class="menu-item">
+										<p class="menu-item--name">Herbata</p>
+									</td>
+									<td class="menu-item menu-item--price">4,00 zł</td>
+								</tr>
+								<tr>
+									<td class="menu-item">
+										<p class="menu-item--name">Barszczyk czerwony</p>
+									</td>
+									<td class="menu-item menu-item--price">3,00 zł</td>
+								</tr>
+							</tbody>
+						</table>
+					</article>
+				</div>
+			</section>
+			<section class="section section-bar" id="bar">
+				<h3 class="section-title">Drink Menu</h3>
+				<div class="menu-box">
+					<article class="menu-cart drink-cart">
+						<table class="table-menu">
+							<tbody>
+								<tr>
+									<td class="menu-item">
+										<p class="menu-item--name">1. Cuba Libre</p>
+										<p class="menu-item--description">50ml Rum, coca-cola, 10ml sok cytrynowy, lód</p>
+									</td>
+									<td class="menu-item menu-item--price">14,00 zł</td>
+								</tr>
+								<tr>
+									<td class="menu-item">
+										<p class="menu-item--name">2. Raggae</p>
+										<p class="menu-item--description">50ml Malibu, coca-cola, lód</p>
+									</td>
+									<td class="menu-item menu-item--price">11,00 zł</td>
+								</tr>
+								<tr>
+									<td class="menu-item">
+										<p class="menu-item--name">3. 007</p>
+										<p class="menu-item--description">50ml wódki, 50ml sok pomarańczowy, 50ml sprite, lód</p>
+									</td>
+									<td class="menu-item menu-item--price">8,00 zł</td>
+								</tr>
+								<tr>
+									<td class="menu-item">
+										<p class="menu-item--name">4. Szarlotka</p>
+										<p class="menu-item--description">50ml Żubrówki, 100ml sok jabłkowy, lód</p>
+									</td>
+									<td class="menu-item menu-item--price">8,00 zł</td>
+								</tr>
+								<tr>
+									<td class="menu-item">
+										<p class="menu-item--name">5. Kamikadze</p>
+										<p class="menu-item--description">50ml wódki, 50ml Blue Curacao, 30ml sok cytrynowy, lód</p>
+									</td>
+									<td class="menu-item menu-item--price">14,00 zł</td>
+								</tr>
+								<tr>
+									<td class="menu-item">
+										<p class="menu-item--name">6. Tornado</p>
+										<p class="menu-item--description">50ml Whisky, 30ml Gin, sok z cytryny, lód</p>
+									</td>
+									<td class="menu-item menu-item--price">14,00 zł</td>
+								</tr>
+								<tr>
+									<td class="menu-item">
+										<p class="menu-item--name">7. Manhattan</p>
+										<p class="menu-item--description">50ml Jim Beam, 40ml Martini Rosso, lód</p>
+									</td>
+									<td class="menu-item menu-item--price">12,00 zł</td>
+								</tr>
+							</tbody>
+						</table>
+					</article>
+				</div>
             </section>
-            <section class="section section-bowling" id="kregle">
-                    <h3 class="section-title">Kręgielnia</h3>
-                    <article class="bowling-pricing">
-                        <div class="pricing-box">
-                            <h4 class="pricing-box--title">Cennik za 1 godzinę gry</h4>
-                            <table class="pricing-table">
-                                <thead>
-                                    <th class="pricing-table--header">
-                                        <td></td>
-                                    </th>
-                                    <th class="pricing-table--header">
-                                        <td>poniedziałek - czwartek</td>
-                                    </th>
-                                    <th class="pricing-table--header">
-                                        <td>piątek - niedziela i święta</td>
-                                    </th>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="pricing-table--description ">do godziny 15:00</td>
-                                        <td class="pricing-table--description pricing-table--price">20,00 zł</td>
-                                        <td class="pricing-table--description pricing-table--price">30,00 zł</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="pricing-table--description ">po godzinie 15:00</td>
-                                        <td class="pricing-table--description pricing-table--price">30,00 zł</td>
-                                        <td class="pricing-table--description pricing-table--price">40,00 zł</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <p class="pricing-box--footer">
-                                <span>Wypożyczenie butów - 1 zł</span>
-                                <span>Skarpety jednorazowe - 1 zł</span>
-                            </p>
-                        </div>
-                    </article>
-            </section>
+            <section class="section section-contact" id="kontakt"></section>
 		</main>
 		<footer class="footer"></footer>
 		<script src="js/page.js"></script>
