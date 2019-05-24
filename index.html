@@ -1,32 +1,109 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Bar Stodoła - Paczków</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <header class="header">
-        <nav class="header-nav">
-            <div class="navigation-toggle btn" id="toggle-menu">
-                <span class="toggle-bar"></span>
-                <span class="toggle-bar"></span>
-                <span class="toggle-bar"></span>
-                <span class="toggle-bar--close"></span>
-            </div>
-            <ul class="navigation">
-                <a href="#onas" class="navigation-item"><li>O nas</li></a>
-                <a href="#bar" class="navigation-item"><li>Bar</li></a>
-                <a href="#kregielnia" class="navigation-item"><li>Kręgielnia</li></a>
-                <a href="#kontakt" class="navigation-item"><li>Kontakt</li></a>
-            </ul>
-        </nav>
-        <h1 class="main-header">Stodoła</h1>
-    </header>
-    <main class="main"></main>
-    <footer class="footer"></footer>
-    <script src="js/page.js"></script>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Bar Stodoła - Paczków</title>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<header class="header">
+			<nav class="header-nav">
+				<div class="navigation-toggle btn" id="toggle-menu">
+					<span class="toggle-bar"></span>
+					<span class="toggle-bar"></span>
+					<span class="toggle-bar"></span>
+					<span class="toggle-bar--close"></span>
+				</div>
+				<ul class="navigation">
+					<a href="#kregle" class="navigation-item"><li>Kręgielnia</li></a>
+					<a href="#menu" class="navigation-item"><li>Menu</li></a>
+					<a href="#bar" class="navigation-item"><li>Bar</li></a>
+					<a href="#kontakt" class="navigation-item"><li>Kontakt</li></a>
+				</ul>
+			</nav>
+			<h1 class="main-header">Stodoła</h1>
+		</header>
+		<main class="main">
+			<section class="section section-short-info">
+				<h3 class="section-title">Co u nas znajdziesz?</h3>
+				<div class="info-items">
+					<article class="info-item info-bowling">
+						<a href="#kregle">
+							<div class="info-icon-box">
+								<img class="info-icon" src="./assets/images/bowling.svg" alt="https://www.flaticon.com/free-icon/bowling_125521" />
+							</div>
+							<p class="info-title">Kręgle</p>
+						</a>
+					</article>
+					<article class="info-item info-pizza">
+						<a href="#menu">
+							<div class="info-icon-box">
+								<img class="info-icon" src="./assets/images/pizza.svg" alt="https://www.flaticon.com/free-icon/italian-pizza-cut-into-slices_27305" />
+							</div>
+							<p class="info-title">Dobre jedzenie</p>
+						</a>
+					</article>
+					<article class="info-item info-bar">
+						<a href="#bar">
+							<div class="info-icon-box">
+								<img class="info-icon" src="./assets/images/beer.svg" alt="https://www.flaticon.com/free-icon/beer_110181" />
+							</div>
+							<p class="info-title">Wyśmienite drinki</p>
+						</a>
+					</article>
+				</div>
+			</section>
+			<section class="section section-gallery">
+				<article class="gallery-item"><img src="./assets/images/gallery_1.jpg" alt="" class="gallery-image" /></article>
+				<article class="gallery-item"><img src="./assets/images/gallery_2.jpg" alt="" class="gallery-image" /></article>
+				<article class="gallery-item"><img src="./assets/images/gallery_4.jpg" alt="" class="gallery-image" /></article>
+				<article class="gallery-item"><img src="./assets/images/gallery_3.jpg" alt="" class="gallery-image" /></article>
+				<article class="gallery-item"><img src="./assets/images/gallery_4.jpg" alt="" class="gallery-image" /></article>
+				<article class="gallery-item"><img src="./assets/images/gallery_3.jpg" alt="" class="gallery-image" /></article>
+				<article class="gallery-item"><img src="./assets/images/gallery_1.jpg" alt="" class="gallery-image" /></article>
+				<article class="gallery-item"><img src="./assets/images/gallery_2.jpg" alt="" class="gallery-image" /></article>
+            </section>
+            <section class="section section-bowling" id="kregle">
+                    <h3 class="section-title">Kręgielnia</h3>
+                    <article class="bowling-pricing">
+                        <div class="pricing-box">
+                            <h4 class="pricing-box--title">Cennik za 1 godzinę gry</h4>
+                            <table class="pricing-table">
+                                <thead>
+                                    <th class="pricing-table--header">
+                                        <td></td>
+                                    </th>
+                                    <th class="pricing-table--header">
+                                        <td>poniedziałek - czwartek</td>
+                                    </th>
+                                    <th class="pricing-table--header">
+                                        <td>piątek - niedziela i święta</td>
+                                    </th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="pricing-table--description ">do godziny 15:00</td>
+                                        <td class="pricing-table--description pricing-table--price">20,00 zł</td>
+                                        <td class="pricing-table--description pricing-table--price">30,00 zł</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="pricing-table--description ">po godzinie 15:00</td>
+                                        <td class="pricing-table--description pricing-table--price">30,00 zł</td>
+                                        <td class="pricing-table--description pricing-table--price">40,00 zł</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p class="pricing-box--footer">
+                                <span>Wypożyczenie butów - 1 zł</span>
+                                <span>Skarpety jednorazowe - 1 zł</span>
+                            </p>
+                        </div>
+                    </article>
+            </section>
+		</main>
+		<footer class="footer"></footer>
+		<script src="js/page.js"></script>
+	</body>
 </html>

@@ -1,11 +1,24 @@
 @import url(reset.css);
 @font-face {
-    font-family: bevan;
-    src: url(fonts/Bevan.ttf);
+    font-family: caveat;
+    src: url(fonts/caveat-regular.ttf);
+}
+@font-face {
+    font-family: caveatBold;
+    src: url(fonts/caveat-bold);
+}
+@font-face {
+    font-family: caveatBrush;
+    src: url(fonts/caveatbrush-regular.ttf);
+}
+html {
+	scroll-behavior: smooth;
 }
 
 body {
-	background-color: #0e0e0e;
+	background-color: #131313;
+	color: #fff;
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 * {
@@ -18,6 +31,9 @@ body {
     user-select: none;
     -webkit-tap-highlight-color: transparent;
 }
+img {
+	max-width: 100%;
+}
 ::selection {
     background-color: transparent;
 }
@@ -27,6 +43,10 @@ a:link,
 a:active {
 	color: inherit;
 	text-decoration: none;
+}
+.hidden {
+	display: none;
+	visibility: hidden;
 }
 .header {
 	max-width: 1366px;
@@ -38,13 +58,17 @@ a:active {
     background-repeat: no-repeat;
     height: 260px;
 }
+.main {
+	max-width: 1366px;
+	margin: 0 auto;
+	width: 100%;
+	position: relative;
+}
 .header-nav .navigation {
 	display: flex;
 	flex-direction: column;
-	background-color: rgba(0, 0, 0, 0.6);
+	background-color: rgba(0, 0, 0, 0.8);
 	position: absolute;
-	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-	color: #e4e4e4;
 	font-size: 1.2em;
 	font-weight: lighter;
 	justify-content: flex-end;
@@ -53,7 +77,8 @@ a:active {
 	margin: 0 auto;
 	left: -100%;
 	transition: left 0.3s ease-in-out;
-    margin-top: 5px;
+	margin-top: 5px;
+	z-index: 9;
 }
 .navigation .navigation-item {
 	cursor: pointer;
@@ -99,13 +124,98 @@ a:active {
 	display: block;
 }
 .main-header {
-    font-family: bevan;
-    color: rgba(255, 255, 255, .7);
-    font-size: 2em;
-    text-align: center;
+    font-family: caveat;
+    font-size: 4em;
+	text-align: left;
+	position: absolute;
+	bottom: 40px;
     padding: 20px;
 }
-@media screen and (min-width: 720px) {
+.section {
+	max-width: 1366px;
+	margin: 0 auto;
+}
+.section-title {
+	font-family: caveat;
+	font-size: 2.2em;
+	text-align: center;
+	padding: 28px 0;
+}
+.section-short-info, .section-bowling {
+	background-color: #040404;
+}
+.info-items {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	max-width: 900px;
+	margin: 0 auto;
+}
+.info-items .info-item {
+	padding: 0 35px;
+	text-align: center;
+	margin: 20px 0;
+}
+.section-short-info .info-icon {
+	width: 24px;
+	height: 24px;
+	margin: 12px;
+}
+.section-short-info .info-icon-box {
+	position: relative;
+	display: inline-block;
+}
+.section-short-info .info-icon-box::before {
+	content: "";
+	width: 48px;
+	height: 48px;
+	border: 1px solid #ffc400;
+	transform: rotate(45deg);
+	display: block;
+	position: absolute;
+}
+.info-item .info-title {
+	margin-top: 30px;
+	font-size: 1em;
+	color: #ffc400;
+	text-transform: uppercase;
+}
+.section-gallery {
+	background-color: #040404;
+	max-width: 1366px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.section-gallery .gallery-item {
+	flex: 25%;
+	max-height: 200px;
+	overflow: hidden;
+	opacity: .6;
+}
+.section-gallery .gallery-item:hover {
+	opacity: 1;
+}
+.section-gallery .gallery-image {
+	object-fit: cover;
+	max-width: 100%;
+}
+.bowling-pricing {
+	background-image: url(../assets/images/bowling_bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	min-height: 240px;
+}
+.pricing-box {
+	background-color: rgba(255, 255, 255, .8);
+	color: #040404;
+	min-height: 300px;
+	width: 600px;
+	padding: 20px;
+}
+@media screen and (min-width: 600px) {
 	.header {
 		height: 420px;
 	}	
@@ -119,5 +229,29 @@ a:active {
 	}
 	.navigation-toggle {
 		display: none;
+	}
+	.main-header {
+		font-size: 7em;
+	}
+	.info-items {
+		flex-direction: row;
+	}
+	.info-items .info-item {
+		flex: 33%;
+		padding: 0 45px;
+		text-align: center;
+		margin: 30px 0;
+	}
+	.section-short-info .info-icon {
+		width: 40px;
+		height: 40px;
+		margin: 20px;
+	}
+	.section-short-info .info-icon-box::before {
+		width: 80px;
+		height: 80px;
+	}
+	.only-for-desktop {
+		display: block;
 	}
 }
