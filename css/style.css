@@ -29,6 +29,8 @@ a:active {
 	text-decoration: none;
 }
 .header {
+	max-width: 1366px;
+	margin: 0 auto;
 	width: 100%;
     position: relative;
     background-image: url(../assets/bar-3407484.jpg);
