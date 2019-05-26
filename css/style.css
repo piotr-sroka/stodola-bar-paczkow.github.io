@@ -58,7 +58,8 @@ a:active {
     background-image: url(../assets/bar-3407484.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 260px;
+	height: 260px;
+	padding-top: 40px;
 }
 .header-fixed {
 	position: fixed;
