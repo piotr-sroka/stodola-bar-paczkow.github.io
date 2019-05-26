@@ -65,6 +65,8 @@ a:active {
 	width: 100%;
 	max-width: 1366px;
 	z-index: 99;
+	top: 0;
+	margin-top: 80px;
 }
 .main {
 	max-width: 1366px;
