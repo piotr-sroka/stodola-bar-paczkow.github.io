@@ -31,8 +31,7 @@ body {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-	-webkit-tap-highlight-color: transparent;
-	box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
 }
 img {
 	max-width: 100%;
@@ -50,6 +49,9 @@ a:active {
 .hidden {
 	display: none;
 	visibility: hidden;
+}
+.header.scrolled {
+	padding-top: 60px;
 }
 .header {
 	max-width: 1366px;

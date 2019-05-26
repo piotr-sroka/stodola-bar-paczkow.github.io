@@ -24,4 +24,12 @@
             this.classList.add("active");
         });
     });
+
+    window.addEventListener("scroll", function() {
+        if (this.scrollY > 0) {
+            document.querySelector(".header").classList.add("scrolled");
+        } else {
+            document.querySelector(".header").classList.remove("scrolled");            
+        }
+    });
 })();
