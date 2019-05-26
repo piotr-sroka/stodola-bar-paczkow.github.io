@@ -59,7 +59,6 @@ a:active {
     background-size: cover;
     background-repeat: no-repeat;
 	height: 260px;
-	padding-top: 40px;
 }
 .header-fixed {
 	position: fixed;
@@ -67,6 +66,7 @@ a:active {
 	max-width: 1366px;
 	z-index: 99;
 	top: 0;
+	height: 60px;
 }
 .main {
 	max-width: 1366px;
