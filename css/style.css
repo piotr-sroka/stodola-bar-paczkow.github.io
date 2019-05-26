@@ -50,9 +50,6 @@ a:active {
 	display: none;
 	visibility: hidden;
 }
-.header.scrolled {
-	padding-top: 60px;
-}
 .header {
 	max-width: 1366px;
 	margin: 0 auto;
@@ -62,6 +59,9 @@ a:active {
     background-size: cover;
     background-repeat: no-repeat;
 	height: 260px;
+}
+.header.scrolled .header-fixed {
+	padding-top: 60px;
 }
 .header-fixed {
 	position: fixed;
