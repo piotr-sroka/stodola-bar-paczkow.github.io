@@ -61,7 +61,7 @@ a:active {
 	height: 260px;
 }
 .header.scrolled .header-fixed {
-	padding-top: 60px;
+	padding-top: 20px;
 }
 .header-fixed {
 	position: fixed;
@@ -69,7 +69,6 @@ a:active {
 	max-width: 1366px;
 	z-index: 99;
 	top: 0;
-	height: 60px;
 }
 .main {
 	max-width: 1366px;
