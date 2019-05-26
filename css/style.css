@@ -295,7 +295,7 @@ a:active {
 	min-height: 40px;
 }
 .table-menu--header, .menu-item--price {
-	white-space: nowrap;
+	white-space: normal;
 	text-align: center;
 }
 .table-menu--header, .table-menu .menu-item {
@@ -394,5 +394,8 @@ a:active {
 	}
 	.menu-cart:last-child {
 		margin-left: 40px;
+	}
+	.table-menu--header, .menu-item--price {
+		white-space: nowrap;
 	}
 }
