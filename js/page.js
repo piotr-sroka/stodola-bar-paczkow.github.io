@@ -31,5 +31,6 @@
         } else {
             document.querySelector(".header").classList.remove("scrolled");            
         }
+        document.querySelector(".header-fixed").style.top = this.scrollY + "px";
     });
 })();

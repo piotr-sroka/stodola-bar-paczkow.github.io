@@ -64,12 +64,11 @@ a:active {
 	padding-top: 20px;
 }
 .header-fixed {
-	position: fixed;
+	position: absolute;
 	width: 100%;
 	max-width: 1366px;
 	z-index: 99;
 	top: 0;
-	transition: all .3s ease-in-out;
 }
 .main {
 	max-width: 1366px;
