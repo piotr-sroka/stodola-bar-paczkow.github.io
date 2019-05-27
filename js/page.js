@@ -33,4 +33,6 @@
         }
         document.querySelector(".header-fixed").style.top = this.scrollY + "px";
     });
+
+    document.querySelector('a[href="' + window.location.hash + '"]').classList.add("active");
 })();
