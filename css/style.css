@@ -52,6 +52,9 @@ a:active {
 	display: none;
 	visibility: hidden;
 }
+.show-above-720 {
+	display: none;
+}
 .header {
 	max-width: 1366px;
 	margin: 0 auto;
@@ -162,7 +165,7 @@ a:active {
 	text-align: center;
 	padding: 28px 0;
 }
-.section-short-info, .section-bowling, .section-menu, .section-bar {
+.section-short-info, .section-bowling, .section-menu, .section-bar, .section-contact {
 	background-color: #040404;
 }
 .info-items {
@@ -270,6 +273,20 @@ a:active {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
+	position: relative;
+	z-index: 1;
+}
+.section-menu .menu-box::after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-image: url(../assets/images/pizza_bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	pointer-events: none;
+	opacity: .15;
 }
 .menu-box .menu-cart {
 	flex: 100%;
@@ -280,6 +297,19 @@ a:active {
 .section-bar .menu-box {
 	display: flex;
 	justify-content: center;
+	position: relative;
+}
+.section-bar .menu-box::after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-image: url(../assets/images/drink_bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	pointer-events: none;
+	opacity: .15;
 }
 .menu-cart--title {
 	font-family: caveat;
@@ -318,6 +348,13 @@ a:active {
 .menu-others .menu-item--name {
 	font-size: 1.2em;
 }
+.menu-others .menu-cart--info,
+.menu-others .table-menu--header {
+	display: none;
+}
+.menu-others .menu-cart--title {
+	margin: 20px 0;
+}
 .menu-item--name.small-name {
 	font-size: .9em;
 }
@@ -326,17 +363,64 @@ a:active {
 	margin-bottom: 20px;
 	font-size: .8em;
 }
+.contact-box {
+	max-width: 1100px;
+	margin: 0 auto;
+	padding-bottom: 60px;
+	text-align: center;
+}
+.contact-map {
+	width: 100%;
+	max-height: 300px;
+}
+.contact-info {
+	padding: 0 40px 40px 40px;
+	max-width: 600px;
+	margin: 0 auto;
+}
 
+.contact-address--hours,
+.contact-address--phone {
+	margin-top: 20px;
+}
+.contact-address--phone {
+	display: flex;
+	justify-content: center;
+}
+.contact-address--phone .phone-icon {
+	width: 20px;
+	height: 20px;
+	margin-right: 10px;
+}
 
-
-.section-contact {
-	margin-top: 80px;
+.font-bigger {
+	font-size: larger;
 }
 
 
-
-
 @media screen and (min-width: 600px) {
+	.info-items {
+		flex-direction: row;
+	}
+	.info-items .info-item {
+		flex: 33%;
+		padding: 0 45px;
+		text-align: center;
+		margin: 30px 0;
+	}
+	.contact-box {
+		padding: 0 60px 60px 60px;
+	}
+}
+
+
+@media screen and (min-width: 760px) {
+	.header.scrolled .header-fixed {
+		padding-top: 0;
+	}
+	.show-above-720 {
+		display: inline;
+	}
 	.header {
 		height: 420px;
 	}	
@@ -353,15 +437,6 @@ a:active {
 	}
 	.main-header {
 		font-size: 7em;
-	}
-	.info-items {
-		flex-direction: row;
-	}
-	.info-items .info-item {
-		flex: 33%;
-		padding: 0 45px;
-		text-align: center;
-		margin: 30px 0;
 	}
 	.section-short-info .info-icon {
 		width: 40px;
@@ -398,7 +473,8 @@ a:active {
 	}
 	.section-menu .menu-box {
 		flex-direction: row;
-		max-width: 1100px;
+		/* max-width: 1100px; */
+		padding: 0 80px;
 		margin: 0 auto;
 	}
 	.menu-box .menu-cart {
@@ -409,5 +485,14 @@ a:active {
 	}
 	.table-menu--header, .menu-item--price {
 		white-space: nowrap;
+	}
+	.menu-others .menu-cart--info {
+		display: block;
+	}
+	.menu-others .table-menu--header {
+		display: table-cell;
+	}
+	.menu-others .menu-cart--title {
+		margin: 0;
 	}
 }
