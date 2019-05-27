@@ -12,7 +12,8 @@
     let navigation = document.querySelector(".header-nav");
     let navigationItems = document.querySelectorAll(".navigation .navigation-item");
 
-    toggleMenuBtn.addEventListener("click", function() {
+    toggleMenuBtn.addEventListener("click", function(e) {
+        e.stopPropagation();
         navigation.classList.toggle("active");
     });
 
@@ -35,4 +36,9 @@
     });
 
     document.querySelector('a[href="' + window.location.hash + '"]').classList.add("active");
+    document.body.addEventListener("click", function(e) {
+        if (e.target !== toggleMenuBtn && navigation.classList.contains("active")) {
+            navigation.classList.remove("active");
+        }
+    });
 })();
