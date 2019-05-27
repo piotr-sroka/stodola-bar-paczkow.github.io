@@ -23,6 +23,7 @@
                 item.classList.remove("active");
             });
             this.classList.add("active");
+            navigation.classList.remove("active");
         });
     });
 
