@@ -239,10 +239,9 @@ a:active {
 	overflow-x: hidden;
 }
 .section-gallery .gallery-item {
-	flex: 33%;
 	overflow: hidden;
 	opacity: .6;
-	object-fit: cover;
+	background-size: cover;
 }
 .section-gallery .gallery-item:hover {
 	opacity: 1;
@@ -250,6 +249,61 @@ a:active {
 .section-gallery .gallery-image {
 	object-fit: cover;
 	max-width: 100%;
+	display: none;
+}
+.section-gallery .gallery-item:nth-child(1) {
+	background-image: url(../assets/images/gallery_1.jpg);
+}
+.section-gallery .gallery-item:nth-child(2) {
+	background-image: url(../assets/images/gallery_2.jpg);
+}
+.section-gallery .gallery-item:nth-child(3) {
+	background-image: url(../assets/images/gallery_3.jpg);
+}
+.section-gallery .gallery-item:nth-child(4) {
+	background-image: url(../assets/images/gallery_4.jpg);
+}
+.section-gallery .gallery-item:nth-child(5) {
+	background-image: url(../assets/images/gallery_5.jpg);
+}
+.section-gallery .gallery-item:nth-child(6) {
+	background-image: url(../assets/images/gallery_6.jpg);
+}
+.section-gallery .gallery-item:nth-child(7) {
+	background-image: url(../assets/images/gallery_7.jpg);
+}
+.section-gallery .gallery-item:nth-child(8) {
+	background-image: url(../assets/images/gallery_8.jpg);
+}
+.section-gallery .gallery-item:nth-child(9) {
+	background-image: url(../assets/images/gallery_9.jpg);
+}
+.section-gallery .gallery-item:nth-child(10) {
+	background-image: url(../assets/images/gallery_10.jpg);
+}
+.section-gallery .gallery-item:nth-child(11) {
+	background-image: url(../assets/images/gallery_11.jpg);
+}
+.section-gallery .gallery-item:nth-child(12) {
+	background-image: url(../assets/images/gallery_12.jpg);
+}
+.section-gallery .gallery-item:nth-child(13) {
+	background-image: url(../assets/images/gallery_13.jpg);
+}
+.section-gallery .gallery-item:nth-child(14) {
+	background-image: url(../assets/images/gallery_14.jpg);
+}
+.section-gallery .gallery-item:nth-child(15) {
+	background-image: url(../assets/images/gallery_15.jpg);
+}
+.section-gallery .gallery-item:nth-child(16) {
+	background-image: url(../assets/images/gallery_16.jpg);
+}
+.section-gallery .gallery-item:nth-child(17) {
+	background-image: url(../assets/images/gallery_17.jpg);
+}
+.section-gallery .gallery-item:nth-child(18) {
+	background-image: url(../assets/images/gallery_18.jpg);
 }
 .bowling-pricing {
 	background-image: url(../assets/images/bowling_bg.jpg);
@@ -642,7 +696,6 @@ a:active {
 		margin: 0;
 	}
 	.section-gallery .gallery-item {
-		flex: 33%;
 		max-width: unset;
 		max-height: 320px;
 		overflow: hidden;

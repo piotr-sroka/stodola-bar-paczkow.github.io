@@ -94,6 +94,16 @@
 		}
 	});
 
+	window.addEventListener("resize", onWindowResize);
+	onWindowResize();
+	function onWindowResize() {
+		let maxSize = Math.floor(Math.min(document.body.clientWidth, 1366) / 6);
+		galleryItems.forEach(function(galleryItem) {
+			galleryItem.style.width = maxSize + "px";
+			galleryItem.style.height = maxSize + "px";
+		});
+	}
+
 	function onSlideShowArrowClick() {
 		if (this === slideShowPrevBtn) {
 			currentDisplayedImage--;
