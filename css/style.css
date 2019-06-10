@@ -575,9 +575,11 @@ a:active {
 	top: Calc(50% - 7px);
 }
 .designer {
-	margin-top: 25px;
+	text-align: center;
 	font-size: 12px;
 	color: #333333;
+	background-color: #040404;
+	padding-bottom: 10px;
 }
 
 @media screen and (min-width: 600px) {
